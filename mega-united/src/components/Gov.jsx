@@ -57,12 +57,7 @@ const prevProject = ()=>{
                         </div>
                     </div>
                 ))}
-            </div>
-            <div className='flex justify-center mb-4'>
-
-                <Link to={"/Projects"}
-                className='hover:bg-white hover:text-blue-600 bg-blue-600 text-white px-8 py-2 rounded flex place-content-center mb-4'
-                >Learn more</Link>
+                
             </div>
 
         </div>
@@ -70,7 +65,7 @@ const prevProject = ()=>{
         {/* Slider buttons */}
 
 
-        <div className='flex place-content-center mb-8'>
+        <div className='flex w-full place-content-center mb-8'>
             <button onClick={prevProject} 
             className='p-3 bg-gray-200 rounded mr-2' aria-label='Previous Project'>
                 <img src={assets.left_arrow} alt="Previous"/>
@@ -79,7 +74,11 @@ const prevProject = ()=>{
             className='p-3 bg-gray-200 rounded mr-2' aria-label='Next Project'>
                 <img src={assets.right_arrow} alt="Next"/>
             </button>
+            <Link to={"/Projects"} className='bg-blue-600 text-white px-8 py-2 rounded ml-auto'>
+                    Learn More
+                </Link>
         </div>
+
     
     </div>
   )

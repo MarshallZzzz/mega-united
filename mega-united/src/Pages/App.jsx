@@ -9,7 +9,7 @@ import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div className='w-full overflow-hidden'>
+    <div className='w-full overflow-hidden scroll-smooth'>
       <Header/>
       <About/>
       <Gov/>

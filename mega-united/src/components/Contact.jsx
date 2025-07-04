@@ -1,6 +1,9 @@
 import React from 'react'
+import { useEffect, useState } from 'react';
+
 
 const Contact = () => {
+    const [openContact, setOpenContact] = useState(false);
   return (
     <div className='text-center p-6 py-20 lg:px-32 w-full overflow-hidden' style={{ backgroundColor: '#DABC94'}}
     id='Contact'>
@@ -28,7 +31,7 @@ const Contact = () => {
 
             </div>
 
-            <button className='bg-blue-600 text-white py-2 px-12 mb-10 rounded'>
+            <button className='bg-blue-600 text-white py-2 px-12 mb-10 rounded' onClick={() => openContact(false)}>
                 Send Messsage
             </button>
         </form>

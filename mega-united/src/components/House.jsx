@@ -3,7 +3,7 @@ import { assets, projectsData } from '../assets/assets'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-const Gov = () => {
+const House = () => {
 
 const [currentIndex, setCurrentIndex] = useState(0);
 const [cardsToShow, setCardsToShow] = useState(1);
@@ -31,7 +31,6 @@ const prevProject = ()=>{
     setCurrentIndex((prevIndex) => prevIndex === 0 ? projectsData.length - 1 :
     prevIndex - 1)
 }
-
 useEffect(() => {
     const interval = setInterval(() => {
         setCurrentIndex(prevIndex => (prevIndex + 1) % projectsData.length);
@@ -43,8 +42,8 @@ useEffect(() => {
 
   return (
     <div className='container mx-auto py-4 pt-20 px-6 md:px-20 lg:ps-32 my-20 w-full
-    overflow-hidden' id='Projects'>
-      <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Government Projects <span className='underline underline-offset-4 decoration-1 under font-light'>Completed</span></h1>
+    overflow-hidden' id='Housing'>
+      <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Housing <span className='underline underline-offset-4 decoration-1 under font-light'>Available</span></h1>
       <p className='text-center text-gray-500 mb-8 max-w-80 mx-auto'>Serving our community</p>
         
         {/* Project slider continer */}
@@ -83,7 +82,7 @@ useEffect(() => {
             className='p-3 bg-gray-200 rounded mr-2' aria-label='Next Project'>
                 <img src={assets.right_arrow} alt="Next"/>
             </button>
-            <Link to={"/Projects"} className='bg-blue-600 text-white px-8 py-2 rounded ml-auto'>
+            <Link to={"/Housing"} className='bg-blue-600 text-white px-8 py-2 rounded ml-auto'>
                     Learn More
                 </Link>
         </div>
@@ -93,4 +92,4 @@ useEffect(() => {
   )
 }
 
-export default Gov
+export default House

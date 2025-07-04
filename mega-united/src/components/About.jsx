@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import { assets } from '../assets/assets'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
     <div className='flex flex-col items-center justify-center
-    container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden'
+    container mx-auto p-14 md:px-20 lg:px-32 w-full'
     id='About'>
         <h1 className='text-2xl sm:text-4xl font-bold mb-2'>MEGA: <span
         className='underline underline-offset-4 decoration-1 under font-light'>Certifications</span></h1>
@@ -29,7 +30,7 @@ const About = () => {
                     actual description of the project. This will include more details 
                     of the project, the project scope, and what we tried to accomplish.
                 </p>
-                <button className='bg-blue-600 text-white px-8 py-2 rounded'>Learn more</button>
+                <Link to={"/About"} className='bg-blue-600 text-white px-8 py-2 rounded'>Learn more</Link>
             </div>
         </div>
     </div>

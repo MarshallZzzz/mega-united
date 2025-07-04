@@ -37,11 +37,11 @@ const ProjNav = () => {
         {/* mx-auto py-4 pt-20 px-6 md:px-20 lg:ps-32 my-20 */}
             {/* Project slider continer */}
             <div className='overflow-hidden w-full h-auto'>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-y divide-x divide-gray-300 gap-10 p-7 w-full'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-7 w-full'>
                     {projectsData.map((project, index) =>(
                         <div key={index}>
                             <button className='transition-transform duration-300 bg-cover ease-in-out hover:scale-105'>
-                                <img src={project.image} alt={project.title} className='max-w-lg' />
+                                <img src={project.image} alt={project.title} className='max-w-lg h-auto w-full' />
                                 <div className='relative left-0 right-0 bottom-5 flex justify-center'>
                                     <div className='inline-block bg-white w-3/4 px-4 py-2 shadow-md'>
                                         <h2 className='text-xl font-semibold text-gray-800'>

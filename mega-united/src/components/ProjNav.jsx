@@ -45,7 +45,7 @@ const ProjNav = () => {
             {/* mx-auto py-4 pt-20 px-6 md:px-20 lg:ps-32 my-20 */}
                 {/* Project slider continer */}
                 <div className='overflow-hidden w-full h-auto'>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-7 w-full'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-7 mx-auto max-w-7xl'>
                         {projectsData.map((project, index) =>(
                             <div key={index}>
                                 <Link to={`/Projects/${project.title.replace(/\s+/g, '-').toLowerCase()}`} className='group'>

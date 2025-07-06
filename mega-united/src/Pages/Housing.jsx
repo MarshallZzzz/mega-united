@@ -13,12 +13,14 @@ const Housing = () => {
       }, []);
     
   return (
-    
+    <div>
+
+    <Navbar/>
     <motion.div
-        initial={{opacity: 0.2, y:100}}
+        initial={{opacity: 0, y:0}}
         animate={{opacity: 1, y: 0}}
-        exit={{opacity: 0, y:-100}}
-        transition={{ease: "easeInOut" ,duration: 1}}    
+        exit={{opacity: 0, y:-20}}
+        transition={{ease: "easeInOut" ,duration: 1.5}}    
     >
         <div className='w-full overflow-hidden shadow-md'>
             <div className='min-h-screen mb-4 bg-fixed bg-cover bg-center flex 
@@ -30,7 +32,6 @@ const Housing = () => {
                 }} 
                 id='Header'>
 
-                <Navbar/>
                 <div className='container text-center mx-auto py-4 px-6 md:px20 lg:px-32 text-white'>
                     <h2 className='text-5xl sm:text-6xl md:text-[82px] inline-block max-w-3xl font-semibold pt-20'>Housing Available</h2>
 
@@ -44,6 +45,7 @@ const Housing = () => {
         </div>
 
     </motion.div>
+    </div>
   )
 }
 

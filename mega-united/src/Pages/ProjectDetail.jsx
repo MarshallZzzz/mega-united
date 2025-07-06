@@ -7,12 +7,14 @@ import ImageGallery from 'react-image-gallery'
 import "react-image-gallery/styles/css/image-gallery.css"
 import Footer from '../components/Footer'
 
-import collage_img1 from '../assets/collage_img1.png'
-import collage_img2 from '../assets/collage_img2.png'
-import collage_img3 from '../assets/collage_img3.png'
-import collage_img4 from '../assets/collage_img4.png'
-import collage_img5 from '../assets/collage_img5.png'
-import collage_img6 from '../assets/collage_img6.png'
+import collage_img1 from '../assets/FleeMarket/Side.JPG'
+import collage_img2 from '../assets/FleeMarket/Back.JPG'
+import collage_img3 from '../assets/FleeMarket/Pourch.JPG'
+import collage_img4 from '../assets/FleeMarket/Interior.JPG'
+import collage_img5 from '../assets/FleeMarket/FirePump.JPG'
+import collage_img6 from '../assets/FleeMarket/FirePump2.JPG'
+import collage_img7 from '../assets/FleeMarket/OutdoorPump.JPG'
+
 
 
 const ProjectDetail = () => {
@@ -45,6 +47,10 @@ const ProjectDetail = () => {
     {
       original: collage_img6,
       thumbnail: collage_img6
+    },
+    {
+      original: collage_img7,
+      thumbnail: collage_img7
     },
 
   ];

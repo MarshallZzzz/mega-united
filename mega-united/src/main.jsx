@@ -9,6 +9,7 @@ import Housing from './Pages/Housing.jsx'
 import Members from './Pages/Members.jsx'
 import Company from './Pages/Company.jsx'
 import ProjectDetail from './Pages/ProjectDetail.jsx';
+import { MotionConfig } from 'framer-motion';
 
 const router = createBrowserRouter([
   {path:"/", element: <App />},
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <MotionConfig 
+      transition={{duration: 0.4, type: "spring"}}>
+      <RouterProvider router={router}/>
+
+    </MotionConfig>
   </StrictMode>,
 )

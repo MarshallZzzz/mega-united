@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import ProjNav from '../components/ProjNav'
 import headerImg from '../assets/GuamBeach.png'
 import Footer from '../components/Footer'
+import { motion } from 'framer-motion'
 
 const Housing = () => {
     useEffect(() => {
@@ -13,7 +14,12 @@ const Housing = () => {
     
   return (
     
-    <div>
+    <motion.div
+        initial={{opacity: 0.2, y:100}}
+        animate={{opacity: 1, y: 0}}
+        exit={{opacity: 0, y:-100}}
+        transition={{ease: "easeInOut" ,duration: 1}}    
+    >
         <div className='w-full overflow-hidden shadow-md'>
             <div className='min-h-screen mb-4 bg-fixed bg-cover bg-center flex 
                 items-center w-full overflow-hidden' 
@@ -37,7 +43,7 @@ const Housing = () => {
             </div>
         </div>
 
-    </div>
+    </motion.div>
   )
 }
 

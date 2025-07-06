@@ -8,13 +8,15 @@ import Projects from './Pages/Projects.jsx'
 import Housing from './Pages/Housing.jsx'
 import Members from './Pages/Members.jsx'
 import Company from './Pages/Company.jsx'
+import ProjectDetail from './Pages/ProjectDetail.jsx';
 
 const router = createBrowserRouter([
   {path:"/", element: <App />},
   {path:"/About", element: <Company/>},
   {path:"/Projects", element: <Projects />},
   {path:"/Housing", element: <Housing />},
-  {path:"/Team", element: <Members/>}
+  {path:"/Team", element: <Members/>},
+  {path:"/Projects/:projectTitle", element: <ProjectDetail/>}
 ]);
 
 createRoot(document.getElementById('root')).render(

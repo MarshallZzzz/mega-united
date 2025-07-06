@@ -5,16 +5,19 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const [atTop, setAtTop] = useState(true);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [openContact, setOpenContact] = useState(false);
 
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
+
     const controlNavbar = () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      setAtTop(window.scrollY === 0);
+      if (currentScrollY > lastScrollY && currentScrollY > 300) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
@@ -32,23 +35,25 @@ const Navbar = () => {
 
     return () => {
       window.removeEventListener("scroll", controlNavbar);
+
       document.body.style.overflow = 'auto';
     };
   }, [showMobileMenu]);
 
   return (
-    <div className={`fixed top-0 left-0 w-full bg-gray-800 shadow-md transition-transform duration-300 z-50
-  ${isVisible ? "translate-y-0" : "-translate-y-full"}`}>
-      <div className='container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent'>
+    <div className={`fixed top-0 left-0 w-full shadow-md z-50 
+  ${isVisible ? "translate-y-0 transition-transform-colors duration-700" : "-translate-y-full transition-transform-colors duration-700"}
+  ${atTop ? "bg-transparent" : "bg-gray-800"}`}>
+      <div className='container mx-auto h-full flex justify-between items-center md:px-20 lg:px-32 bg-transparent'>
         <img src={assets.logoWhite} alt="Logo" className='w-16 h-auto' />
-        <ul className='hidden md:flex gap-7 text-white'>
-          <Link to={"/"} className='cursor-pointer hover:text-green-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</Link>
-          <Link to={"/About"} className='cursor-pointer hover:text-green-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>About</Link>
-          <Link to={"/Projects"} className='cursor-pointer hover:text-green-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Projects</Link>
-          <Link to={"/Housing"} className='cursor-pointer hover:text-green-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Housing</Link>
-          <Link to={"/Team"} className='cursor-pointer hover:text-green-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Team</Link>
-        </ul>
-        <button className='hidden md:block bg-white px-8 py-2 rounded-full' onClick={() => setOpenContact(true)}>Contact Us</button>
+        <div className='hidden w-full align-items-center justify-center text-center md:flex gap-7 text-white'>
+            <Link to={"/"} className='bg-tansparent items-center justify-center text-center font-bold cursor-pointer hover:text-gray-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</Link>
+          <Link to={"/About"} className='cursor-pointer font-bold hover:text-gray-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>About</Link>
+          <Link to={"/Projects"} className='cursor-pointer font-bold hover:text-gray-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Projects</Link>
+          <Link to={"/Housing"} className='cursor-pointer font-bold hover:text-gray-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Housing</Link>
+          <Link to={"/Team"} className='cursor-pointer font-bold hover:text-gray-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Team</Link>
+        </div>
+        <button className='hidden md:block bg-white px-3 py-2 w-1/8 rounded-full' onClick={() => setOpenContact(true)}>Contact Us</button>
         {
           openContact &&
           <div className="fixed top-0 right-0 h-full w-full sm:w-[700px] z-50 transition-transform duration-300 translate-x-0"

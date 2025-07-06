@@ -44,16 +44,16 @@ const Navbar = () => {
     <div className={`fixed top-0 left-0 w-full shadow-md z-50 
   ${isVisible ? "translate-y-0 transition-transform-colors duration-700" : "-translate-y-full transition-transform-colors duration-700"}
   ${atTop ? "bg-transparent" : "bg-gray-800"}`}>
-      <div className='container mx-auto h-full flex justify-between items-center md:px-20 lg:px-32 bg-transparent'>
-        <img src={assets.logoWhite} alt="Logo" className='w-16 h-auto' />
+      <div className='container mx-auto h-full flex justify-between items-center md:px-20 lg:px-32 bg-transparent pt-8 pb-8'>
+        {/* <img src={assets.logoWhite} alt="Logo" className='w-16 h-auto' /> */}
         <div className='hidden w-full align-items-center justify-center text-center md:flex gap-7 text-white'>
             <Link to={"/"} className='bg-tansparent items-center justify-center text-center font-bold cursor-pointer hover:text-gray-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</Link>
           <Link to={"/About"} className='cursor-pointer font-bold hover:text-gray-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>About</Link>
           <Link to={"/Projects"} className='cursor-pointer font-bold hover:text-gray-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Projects</Link>
           <Link to={"/Housing"} className='cursor-pointer font-bold hover:text-gray-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Housing</Link>
-          <Link to={"/Team"} className='cursor-pointer font-bold hover:text-gray-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Team</Link>
+          {/* <Link to={"/Team"} className='cursor-pointer font-bold hover:text-gray-400' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Team</Link> */}
         </div>
-        <button className='hidden md:block bg-white px-3 py-2 w-1/8 rounded-full' onClick={() => setOpenContact(true)}>Contact Us</button>
+        {/* <button className='hidden md:block bg-white px-3 py-2 w-1/8 rounded-full' onClick={() => setOpenContact(true)}>Contact Us</button>
         {
           openContact &&
           <div className="fixed top-0 right-0 h-full w-full sm:w-[700px] z-50 transition-transform duration-300 translate-x-0"
@@ -86,7 +86,7 @@ const Navbar = () => {
               </form>
             </div>
           </div>
-        }
+        } */}
 
         <img onClick={() => setShowMobileMenu(true)} src={assets.menu_icon} className='md:hidden w-7 cursor-pointer' alt="" />
       </div>

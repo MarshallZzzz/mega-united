@@ -1,4 +1,6 @@
 import React from 'react'
+import {motion, useTransform, useScroll} from "framer-motion";
+import { useRef } from 'react'
 import { useParams } from 'react-router-dom'
 import { projectsData } from '../assets/assets'
 import Navbar from '../components/Navbar'
@@ -81,5 +83,6 @@ const ProjectDetail = () => {
     </div>
   )
 }
+
 
 export default ProjectDetail

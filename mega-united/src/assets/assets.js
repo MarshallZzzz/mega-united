@@ -10,10 +10,10 @@ import header_img from './guamBeach.png'
 import brand_img from './brand_img.png'
 import project_img_1 from './Playground.jpg'
 import project_img_2 from './FleeMarket/Thumbnail.jpg'
-import project_img_3 from './project_img_3.jpg'
-import project_img_4 from './project_img_4.jpg'
-import project_img_5 from './project_img_5.jpg'
-import project_img_6 from './project_img_6.jpg'
+import project_img_3 from './FleeMarket/Back.JPG'
+import project_img_4 from './FleeMarket/FirePump.JPG'
+import project_img_5 from './FleeMarket/Generator.JPG'
+import project_img_6 from './FleeMarket/Pourch.JPG'
 import profile_img_1 from './profile_img_1.png'
 import profile_img_2 from './profile_img_2.png'
 import profile_img_3 from './profile_img_3.png'
@@ -41,37 +41,37 @@ export const assets = {
 
 export const projectsData = [
     {
-      title: "Skyline Haven",
+      title: "PlayGround",
       price: "$2,50,000",
       location: "California",
       image: project_img_1
     },
     {
-      title: "Vista Verde",
+      title: "Farmer's Co-OP",
       price: "$2,50,000",
       location: "San Francisco",
       image: project_img_2
     },
     {
-      title: "Serenity Suites",
+      title: "Fleemarket Back",
       price: "$2,50,000",
       location: "Chicago",
       image: project_img_3
     },
     {
-      title: "Central Square",
+      title: "Fire Pump",
       price: "$2,50,000",
       location: "Los Angeles",
       image: project_img_4
     },
     {
-      title: "Vista Verde",
+      title: "Generator",
       price: "$2,50,000",
       location: "San Francisco",
       image: project_img_5
     },
     {
-      title: "Serenity Suites",
+      title: "Fleemarket Pourch",
       price: "$2,50,000",
       location: "Chicago",
       image: project_img_6

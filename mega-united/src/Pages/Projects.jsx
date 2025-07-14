@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import ProjNav from '../components/ProjNav'
 import headerImg from '../assets/GuamBeach.png'
 import Footer from '../components/Footer'
+import { motion } from 'framer-motion'
 
 
 
@@ -14,28 +15,36 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className='w-full overflow-hidden shadow-md'>
-      <div className='min-h-screen mb-4 bg-fixed bg-cover bg-center flex 
-        items-center w-full overflow-hidden' 
-        style={{
-          backgroundImage: `url(${headerImg})`,
-          backgroundAttachment: 'fixed',
-          backgroundRepeat: 'no-repeat',
-        }} 
-        id='Header'>
+    <motion.div
+        initial={{opacity: 0, y:0}}
+        animate={{opacity: 1, y: 0}}
+        exit={{opacity: 0, y:-200}}
+        transition={{ease: "easeInOut" ,duration: 1.5}}    
+    >
+      <div className='w-full not-odd:overflow-hidden shadow-md bg-black'>
+        
+        <div className='min-h-screen mb-4 bg-fixed bg-cover bg-center flex 
+           w-full overflow-hidden' 
+          style={{
+            backgroundImage: `url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2t5c2NyYXBlcnxlbnwwfHwwfHx8MA%3D%3D)`,
+            backgroundAttachment: 'fixed',
+            backgroundRepeat: 'no-repeat',
+          }} 
+          id='Header'>
 
-          <Navbar/>
-        <div className='container text-center mx-auto py-4 px-6 md:px20 lg:px-32 text-white'>
-          <h2 className='text-5xl sm:text-6xl md:text-[82px] inline-block max-w-3xl font-semibold pt-20'>Government Projects</h2>
+          <div className='relative text-white w-full'>
+            <h2 className='absolute bottom-0 text-5xl sm:text-6xl md:text-6xl pl-16 pb-16' style={{fontFamily: '"Helvetica Neue", Helvetica, Arial, sanserif'}}>Government Projects</h2>
+
+          </div>
+          
+        </div>
+        <div>
+          <ProjNav/>
 
         </div>
-        
+        <Navbar/>
       </div>
-      <div>
-        <ProjNav/>
-        <Footer/>
-      </div>
-    </div>
+    </motion.div>
   )
 }
 

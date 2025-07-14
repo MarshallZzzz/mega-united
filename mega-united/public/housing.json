@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Tamuning Apartments",
+        "location": "133 Tan Chong Sablan, Street B, Tamuning, Guam 96931",
+        "status": "Available",
+        "price": 2423016,
+        "size": 1400,
+        "stories": 2,
+        "bed": 3,
+        "bath": 2,
+        "contact": "Chris Guerrero",
+        "yrbuilt": 2018,
+        "thumbnail":"https://cdn.resize.sparkplatform.com/gar/1280x1024/true/20241206071537591687000000-o.jpg",
+        "images":[""]
+        
+    }
+]

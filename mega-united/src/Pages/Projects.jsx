@@ -15,12 +15,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <motion.div
-        initial={{opacity: 0, y:0}}
-        animate={{opacity: 1, y: 0}}
-        exit={{opacity: 0, y:-200}}
-        transition={{ease: "easeInOut" ,duration: 1.5}}    
-    >
+     
       <div className='w-full not-odd:overflow-hidden shadow-md bg-black'>
         
         <div className='min-h-screen mb-4 bg-fixed bg-cover bg-center flex 
@@ -43,8 +38,9 @@ const Projects = () => {
 
         </div>
         <Navbar/>
+        <Footer/>
       </div>
-    </motion.div>
+    
   )
 }
 

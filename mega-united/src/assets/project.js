@@ -1,0 +1,151 @@
+
+export const project = [
+    {
+        _id:{"$oid":"686b5f77b40c958a2f755a8a"},
+        title:"GCA Training Center",
+        location:"Tiyan, Guam",
+        price:"$2,877,593",
+        startD:"September 30, 2019",
+        completionD:"October 20, 2021",
+        contractor:"GCA",
+        description:"The Existing Facility consists\nof two Steel warehouse buildings of 8900sf each; Mega United Corp.\nhad demolished old structural slab on grade, rebuild all interiors with\ncombination of wood and concrete floors with new Gypsum board wall\nconverting both buildings into 2-storey classrooms and offices. Storm\ndrainage, waste removal and landscaping features in strict conformity\nwith project specs and EPA requirements; Asphalt pavement of parking\nlot with complete traffic markings and signage. Electrical Mainline and\nother communication lines were extended from street power pole via\nhardened manhole to the main building. The two main buildings were\nrefurbished into completely new functioning structures with high-\nquality AC and Exhaust Fan systems. Commercial lightings were\nconstructed with complete fire alarm system. Interconnected Telecom\nand Internet system was installed ready for hook-up with internet\nprovider. High-quality foldable partitions were built between\nclassrooms unique for classroom/conference multi-purposes. This\nProject had served as new regional training center for construction\ntrade workers on Guam.",
+        thumbnail:"https://lh3.googleusercontent.com/p/AF1QipPRrFkT3GPn76j-voc5EWSfhUEfyOmtSXTBTM69=s1360-w1360-h1020-rw"
+    },
+    {
+        _id:{"$oid":"686e4459b40c958a2f755a90"},
+        title:"Community Art Center",
+        location:"Sinajana, Guam",
+        price:"$1,098,235",
+        StartD:"December 11, 2019",
+        completionD:"December 17, 2022",
+        contractor:"Ghura",
+        description:"Mega United\nCorp. had performed as prime contractor. Mega United Corp. had\n completed all civil works including demolition of old structure, waste\n        removal and landscaping features in strict conformity with project\n        specs and EPA requirements; The main building of 3500sf was\n        constructed at 20’ feet height roof with Double Tee Precast Roof\n        Panels. Commercial lightings with complete fire alarm system; State-\n        of-Art Acoustical ceiling and wall panels combined with custom AC\n        system had provided Sinajana Community",
+        thumbnail:"https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrPb6Gx51haCmOOhoH9dhcnUHIja8Q4sAuOmpqRbMdhvPmrYC4jptWw94XXcHed475w0RwH7m_OzEFUkzAXLJx2z2WPZe0dawQVn_aj3ljXiA1jS9I9aMKv0taP41Pc2anWjDBKywGhHpXf=s1360-w1360-h1020-rw"
+    },
+    {
+        _id:{"$oid":"686e4b05b40c958a2f755a91"},
+        title:"GWA Compliance Laboratory",
+        location:"Upper Tumon, Guam",
+        price:"$2,423,016",
+        StartD:"September 15, 2016",
+        completionD:"December 17, 2017",
+        contractor:"Guam Waterworks Authority",
+        description:"Mega United Corp. had\ncompleted all civil works including demolition of old structural grade\nbeams, waste removal and landscaping features in strict conformity\nwith project specs and EPA requirements; Asphalt pavement of parking\nlot with complete traffic markings and signage. Electrical Mainline and\nother communication lines were extended from street power pole via\nhardened manhole to the main building. The main building of 6000sf\nwas constructed at 18’8” feet height roof completes with high-quality\nAC and Exhaust Fan systems. Commercial lightings and 300kw\nstandby generator with ATS and 5000 gallons fuel storage tank were\nconstructed with complete fire alarm system. Interconnected Telecom\nand Internet system was installed ready for hook-up with internet\nprovider. High-quality Anti-corrosion plumbing rough-in and fixtures\nwere unique for chemical testing purposes. Brand-name American\nKewaunee laboratory caseworks with fume hoods and testing features\nrepresented first-in-kind testing center for Guam. This Project had\nbecome a landmark water-testing building on Guam.",
+        thumbnail:"https://bloximages.newyork1.vip.townnews.com/postguam.com/content/tncms/assets/v3/editorial/b/b7/bb7a7ed8-5ea9-11e6-b116-cb180d1bad89/57aa9e10e5a93.image.jpg"
+    },
+    {
+        _id:{"$oid":"686e4b05b40c958a2f755a92"},
+        title:"Dededo Flea Market",
+        location:"Dededo, Guam",
+        price:"$3,127,016",
+        StartD:"July 7, 2014",
+        completionD:"December 17, 2015",
+        contractor:"Guam Economic Development Authority",
+        description:"With 8 Acres of Land Area,\nMega United Corp. had completed all civil works including waste\nremoval and grading, 3 ponding basins with culverts and headwalls,\ngrand landscaping features in strict conformity with project specs and\nEPA requirements; Asphalt pavement of parking lot of 5 acres with\ncomplete traffic markings and signage. The civil work also included\n12” main waterline extension and wet tapping; Electrical Mainline and\nother communication lines were extended from across street power pole\nvia hardened manholes and cross-street conduit lay-outs to the main\nbuilding. The main building of 12000sf was constructed at 24 feet\nheight pitched roof complete with high-quality Mitsubishi AC system\nand cold storage cooler and freezer units; Commercial lightings and\n80kw standby generator with ATS. To meet strict Fire department and\nEPA requirements a 35000 gallons fiberglass water tank was\nconstructed with complete fire pump system which had established new\nfarmers’ building as most conforming building on Guam. High-quality\nplumbing Appliances with kitchen features had made this building\nserving multi-functional purposes. Aluminum Doors and Storefronts\nwere rated more than 175mph; Interior HM/SCWD and HM/Metal\ndoors were with American Hardware sets. 10-year elastomeric roof\ncoatings system with insulated under slab Gypsum boards and/or\nAcoustical ceilings had made this building truly energy-saving modern\nfacility for our Guam farmers. This Project was awarded with high\nremarks from Governor Calvo, owner, designer and farmers; And will\nbecome a landmark building on Guam.",
+        thumbnail:"https://www.azcentral.com/gcdn/-mm-/a481916a9da4934da6f90fc763e8898a9ede1f3d/c=0-248-4928-3032/local/-/media/2015/12/27/Guam/Guam/635868555948006498-GUATab-11-13-2015-PDN-1-A005--2015-11-12-IMG-Farmers-Co-op-02-1-1-D0CHL3GU-L709122339-IMG-Farmers-Co-op-02-1-1-D0CHL3GU.jpg?width=1320&height=746&fit=crop&format=pjpg&auto=webp"
+    },
+    {
+        _id:{"$oid":"686e4b05b40c958a2f755a93"},
+        title:"Fishing Platform",
+        location:"Hagatna, Guam",
+        price:"$999,370",
+        StartD:"October 15, 2015",
+        completionD:"July 27, 2018",
+        contractor:"Guam Department of Public Works",
+        description:"With Hagatna Marina\nChannel in view, Mega United Corp. had completed all civil and\nstructural works in strict conformity with Army Corp of Engineers and\nEPA requirements. 225’x19’2” view and fishing platform was\nconstructed with reinforced concrete footings, columns and walls of\nepoxy-coated rebar. Precast reinforced concrete main beams of\nepoxy–coated rebar was firmly anchored to underneath wall after crane\nlifting operation; Hollow Aluminum Tubes served as distributing\nbeams to support fiberglass grates; Fiberglass railings with brackets\nwere securely fastened to Aluminum beams. This Project had set a\ngood example for marine construction. All kinds of anti-corrosion\nmaterials were utilized and technically combined to fulfill intended\npurposes. This platform has since provided recreational and subsistence\nfishing access to the Hagatna Marina Channel complete with surface\nramps and ADA compliant decking, guardrails and wheel stops.",
+        thumbnail:"https://outgress.com/proxy/aHR0cDovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20veHNnaV9VVkp0Q1lwWGNRVDJUNmQ2aTJpUjFKYnNIY1ZHbXFuSkplS2xPTUhtN1RSb2JtbHdJS2tiMWJINjljNl9iMHZZdWlNZHJzLXhZaFBWM2RFenRxaTJCYlY%3D/image.png"
+    },
+    {
+        _id:{"$oid":"686e4b05b40c958a2f755a94"},
+        title:"Synthetic Track Replacement",
+        location:"Tamuning, Guam",
+        price:"$248,710",
+        StartD:"July 10, 2017",
+        completionD:"December 15, 2017",
+        contractor:"Guam Department of Education",
+        description:"Mega United\nCorp. had performed as prime contractor with FirstNet providing\nperformance and payment bonds. This project consisted of complete\nremoval and replacement of 400-meter track and field sport running\ntrack for JFK high school. Upon removal of old deteriorated track,\nMega United Corp. had proposed to repair poor subbase and corrected\ndrainage conditions to prevent future subbase issues and conflicts;\nTeamed with Off-island supplier We provided suitable track design for\napproval and brought modern paving machinery with enhanced\nmaterial formulated for tropical climate. We also demonstrated skilled\nworkmanship to overcome any technical and construction challenges.\nThe successful completion on the sport running track provided solid\nevidences that Mega United Corp. can mobilize and handle an\nunconventional project with quality work.",
+        thumbnail:"https://www.elpasotimes.com/gcdn/presto/2021/04/24/PGUA/e502b2a8-7f65-491a-9970-2470561fc457-DSC_2871.jpg?width=700&height=493&fit=crop&format=pjpg&auto=webp"
+    },
+    {
+        _id:{"$oid":"686e4b05b40c958a2f755a95"},
+        title:"Structural Repairs & Roof Coatings",
+        location:["LBJ Elementary School, Tamuning Guam","Tamuning Elementary School, Tamuning Guam","Chief Brodie Elementary School, Tamuning Guam","Upi Elementary School, Yigo Guam"],
+        price:"$1,317,328",
+        StartD:"March 18, 2013",
+        completionD:"December 8, 2013",
+        contractor:"Guam Department of Education",
+        description:"Mega United\nCorp. had performed as prime contractor with FirstNet providing\nperformance and payment bonds. This project consisted of complete\nstructural repairs and roof water proofing for 4 northern/central\nschools. Under contract terms and specifications, the contractor was\nrequired to epoxy inject structural cracks, correct roof water ponding\nand apply 40 Mils water proofing elastomeric coatings. The scope of\nwork covered more than 360,000sf classrooms. This project was 100%\nfederal-funded through ARRA. During the course of the project, Mega\nUnited Corp. had coordinated with both CM and PM to resolve any\nissues and conflicts; provided value engineering proposals, and also\ndemonstrated skilled workmanship to overcome any technical and\nconstruction challenges. The successful completion on 12/08/2013\nprovided solid evidences that Mega United Corp. can mobilize and\nhandle a project in large scale with quality work.",
+        thumbnail:"https://bloximages.newyork1.vip.townnews.com/guampdn.com/content/tncms/assets/v3/editorial/5/9f/59f84cfa-3eab-48f5-a4d2-b1c9edf842af/68352f2b4c917.image.jpg?resize=745%2C500"
+    },
+    {   
+        _id:{"$oid":"686e4b05b40c958a2f755a96"},
+        title:"Structural Repairs & Roof Coatings",
+        location:["D.L.Perez Elementary School, Yigo Guam","Simon Sanchez High School, Yigo Guam","F.B. Leon Guerrero Middle School, Yigo Guam","J.M. Guerrero Elementary School, Dededo Guam"],
+        price:"$1,864,606",
+        StartD:"December 17, 2012",
+        completionD:"December 20, 2013",
+        contractor:"Guam Department of Education",
+        description:"Mega United\nCorp. had performed as prime contractor with FirstNet providing\nperformance and payment bonds. This project consisted of complete\nstructural repairs and roof water proofing for 4 northern schools. Under\ncontract terms and specifications, the contractor was required to epoxy\ninject structural cracks, correct roof water ponding and apply 40 Mils\nwater proofing elastomeric coatings. The scope of work covered more\nthan 360,000sf classrooms. This project was 100% federal-funded\nthrough ARRA. During the course of the project, Mega United Corp.\nhad coordinated with both CM and PM to resolve ant issues and\nconflicts; provided value engineering proposals, and also demonstrated\nskilled workmanship to overcome any technical and construction\nchallenges. The successful completion on 12/20/2013 provided solid\nevidences that Mega United Corp. can mobilize and handle a project in\nlarge scale with quality work.",
+        thumbnail:"https://bloximages.newyork1.vip.townnews.com/guampdn.com/content/tncms/assets/v3/editorial/1/95/195d46de-e5e6-11eb-800e-2b6e341e3fb6/60f0fd88c1a26.image.jpg"
+    },
+    {
+        _id:{"$oid":"686e4b05b40c958a2f755a97"},
+        title:"Roofing Repairs",
+        location:"Dededo, Guam",
+        price:"$2,659,950",
+        StartD:"June 18, 2010",
+        completionD:"December 23, 2011",
+        contractor:"Guam Housing & Urban Renewal Authority",
+        description:"Ghura 48 Units had\ndeteriorated roofs which were structurally unsound with rusted rebars;\nas a result, Ghura had to vacate all tenants for safety reasons and\ndemanded Mega United Corp. to break the project into 2 phases. The\nfirst phase of 21 units had to be done before 03/25/2011 to allocate\ntenants back to units as soon as possible to save Ghura relocation costs;\nthe second phase had to start on December 22, 2010 in parallel with\nphase one ongoing in order to minimize total construction period to\nsave government costs of providing alternative accommodation for\ntenants. Mega United Corp. had made speedy mobilization to perform\nunder slab structural reinforcements; The techniques designed by\narchitects and structure engineers were unique in Guam with no\ncontractors having done sort of things before; Mega United Corp. had\ncoordinated with A/E firm to resolve all critical issues and conflicts\nduring the course of the construction. In addition, with other renovation\nscope, our company were able to deliver refurbished units on time per\nspecs and exceed the owner’s expectations.",
+        thumbnail:"https://ghura.org/sites/default/files/amp2-ghura-guam.jpg"
+    },
+    {
+        _id:{"$oid":"686e4b05b40c958a2f755a98"},
+        title:"Pete Seguenza Court Maite Subdivision",
+        location:"Maite, Guam",
+        price:"$5,850,000",
+        StartD:"November 18, 2009",
+        completionD:"December 23, 2015",
+        contractor:"Mega United Corp. LTD.",
+        description:"After securing 5 Acres of such Maite prime land, Mega United Corp.\nhad promptly retained the service of Registered Land Surveyor Mr.\nRobert Moya to subdivide the R-2 zone land into 13 individual lots and\nbrought main waterline and sewer line into each individual lots\ncomplete with storm drainage system. These extensive civil works\ninvolved massive grading, cut-and-fill of topographic contours;\ncomplicated installations of all kind of manholes for water, sewer,\nelectrical, communication and storm drains. Four different type of 2-\nstorey houses were designed by Antonio Herrera and Cesar Somera etc.\naccording to lots of different topo configurations. Beautifully designed\nand built houses had attracted a lot of high-end buyers including Wayne\nCornell/DZSP President, Joe San Nicolas/Fire Department Chief, Rino\nMenzaro/GM for Mariana Energy Co. Mega United Corp. had\ncompleted all scopes of work without need to invoke any subcontractor\nservices. All Electrical and Mechanical works, all civil works were\nsolely carried out by the company itself. Granite Counter-top and\nquality Cabinet caseworks, multi-layer reflective ceilings with insulated\npartitions complete with quality AC system and electrical fixtures had\nearned Mega United Corp. a renowned developer for executive houses.\nMega United Corp. had also built and sold so many quality houses for our military servicemen and servicewomen; As a result, it was honored\nby VA administration and then granted “VA Builder” title.",
+        thumbnail:"https://cdn.photos.sparkplatform.com/gar/20170705055821489640000000-o.jpg"
+    },
+    {
+        _id:{"$oid":"686e4b05b40c958a2f755a99"},
+        title:"Sports Facility Rebuild",
+        location:"Barrigada & Mangilao, Guam",
+        price:"$2,256,685",
+        StartD:"November 18, 2009",
+        completionD:"December 23, 2015",
+        contractor:"Guam Department of Park and Recreation",
+        description:"Activity performed was Design-Build new steel\ngymnasium, Survey, re-established Property line and proper elevation\nof basketball court, Basketball electronic accessories system, Painting\nworks, Power/Lighting system. Design-Build High Security Fence\nincluding new storm drain and catch basin system, waterline for\nfountain complete fixtures. Renovation of existing restroom with new\nfixtures, accessories, lighting system &amp; outlets including parking lay-\nout.",
+        thumbnail:"https://bloximages.newyork1.vip.townnews.com/guampdn.com/content/tncms/assets/v3/editorial/8/a1/8a1b56ec-06dc-11ec-ad8f-33ef007588f5/61284ba93f54a.image.jpg?resize=400%2C300"
+    },
+    {
+        _id:{"$oid":"686e4b05b40c958a2f755a9a"},
+        title:"Residential Improvements",
+        location:"Yigo, Guam",
+        price:"$4,880,000",
+        StartD:"March 25, 2021",
+        completionD:"July 23, 2024",
+        contractor:"Mega United Corp. LTD.",
+        description:"Mega\nUnited Corp. Activity performed was Land Development, Survey, re-\nestablished Property line and road works. Installation of underground\nelectrical utilities. Housing units fully furnish &amp; Street lights system.",
+        thumbnail:""
+    },
+    {
+        _id:{"$oid":"686e4b05b40c958a2f755a9b"},
+        title:"Community Arts Center",
+        location:"Sinajana, Guam",
+        price:"$1,121,897",
+        StartD:"March 4, 2020",
+        completionD:"June 1, 2022",
+        contractor:"Guam Housing & Urban Renewal Authority",
+        description:"Mega United Corp. scope of work for this project involves the\ncomplete demolition of the existing community center in Sinajana\nGuam, followed by the construction of a new Community Arts Center,\nincluding all necessary site preparation, utilities, and finishes.\nDemolition includes Site preparation, Building demolition, Utilities\ndisconnection, Debris Removal, Site Restoration. While Construction\nof New Community Arts Center includes Foundation and Structure,\nExterior walls and roof, Interior walls and finishes, Utilities\ninstallation, Accessibility, Landscaping, Signage and Wayfinding,\nInterior design and furnishing, Testing and Commissioning.",
+        thumbnail:"https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrPb6Gx51haCmOOhoH9dhcnUHIja8Q4sAuOmpqRbMdhvPmrYC4jptWw94XXcHed475w0RwH7m_OzEFUkzAXLJx2z2WPZe0dawQVn_aj3ljXiA1jS9I9aMKv0taP41Pc2anWjDBKywGhHpXf=s1360-w1360-h1020-rw"
+    }
+]
+
+export function getProjectByTitle(title){
+    const cleanTitle = title.startsWith(":") ? title.slice(1) : title;
+    return project.find(obj=>obj.title === cleanTitle);
+}

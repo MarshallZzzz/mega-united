@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom';
-import { assets } from '../assets/assets'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { projectsData } from '../assets/assets';
+import { project } from '../assets/project.js';
 
 const ProjNav = () => {
     const params = useParams();
@@ -13,34 +12,15 @@ const ProjNav = () => {
         async function fetchData() {
             // if(!params.id) return;
             // console.log(params.id);
-            const response = await fetch(`http://localhost:3000/api/data`);
+            const response = await fetch(`/project.json`);
             const data = await response.json();
-            // console.log(data);
+            console.log(data);
             setProjectsData(data);
         }
         fetchData();
 
     }, []);
-    // console.log(params);
 
-    // const [currentIndex, setCurrentIndex] = useState(0);
-    // const [cardsToShow, setCardsToShow] = useState(1);
-
-    // useEffect(() => {
-    //     const updateCardsToShow = () => {
-    //         if (window.innerWidth >= 1024) {
-    //             setCardsToShow(projectsData.length);
-    //         } else {
-    //             setCardsToShow(1)
-    //         }
-    //     };
-    //     updateCardsToShow();
-
-    //     window.addEventListener('resize', updateCardsToShow);
-    //     return () => window.removeEventListener('resize', updateCardsToShow);
-
-
-    // }, []);
 
     return (
         <motion.div
@@ -53,9 +33,10 @@ const ProjNav = () => {
                 {/* Project slider continer */}
                 <div className='overflow-hidden w-full h-auto'>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w divide-x-8 divide-y-8 divide-black'>
-                        {projectsData.map((item, index) => (
+                        {project.map((item, index) => (
                             <div key={index}>
-                                <Link to={`/Projects/${item._id}`} className='group'>
+                                <Link to={`/Projects/:${item.title}`} className='group'>
+                                console.log({item.title})
                                     <div className='transition-transform duration-300 bg-cover hover:scale-101'>
                                         <img src={item.thumbnail} alt={item.title} className='max-w max-h-150 h-auto w-full' />
                                         <div className='relative left-0 right-0 bottom-10 flex justify-center'>

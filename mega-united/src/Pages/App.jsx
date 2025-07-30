@@ -1,11 +1,12 @@
-import React, {useRef, useState, useEffect} from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import Header from '../components/Header'
 import { motion, useScroll, useTransform, useInView } from 'framer-motion'
 import { FiArrowUpRight } from "react-icons/fi"
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
-const transition = { duration: 1, ease: [.25,.1,.25,1] };
+const transition = { duration: 1, ease: [.25, .1, .25, 1] };
 const variants = {
   hidden: { filter: "blur(10px)", transform: "translateY(10%)", opacity: 0 },
   visible: { filter: "blur(0)", transform: "translateY(0)", opacity: 1 },
@@ -16,35 +17,39 @@ const App = () => {
   return (
     <div className="bg-black">
 
-          <Header/>
-     
-        <TextParallaxContent
+      <Header />
+
+      <TextParallaxContent
         imgUrl={"/history/establishment.jpg"}
         subheading="This is a dummy text in place of the
                         actual description of the project. This will include more details
                         of the project, the project scope, and what we tried to accomplish."
-        heading="About"
+        heading="Our History"
+        loc="History#header"
       ></TextParallaxContent>
       <TextParallaxContent
         imgUrl={"/FleeMarket/Thumbnail.JPG"}
         subheading="Community is our priority. We take pride in enhancing community infrastructures and public services through the help of government funding. We are committed to upholding the highest standards of quality, safety, and compliances to ensure timely completion."
         heading="Government Projects"
+        loc="Projects#header"
       >
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl={"/Subdivision/front2.jpg"}
         subheading="We are dedicated to providing high-quality, affordable housing solutions that meet the needs of diverse communities. Our approach emphasizes thoughtful planning, durable construction, and a commitment to creating safe, comfortable living environments. By working closely with local partners and stakeholders, we strive to ensure that every housing project contributes to long-term community growth and well-being."
         heading="Housing"
+        loc="Housing#header"
       >
       </TextParallaxContent>
-      <Navbar/>
+      <Navbar />
+      <Footer/>
     </div>
   )
 }
 
 const IMG_PADDING = 0;
 
-const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
+const TextParallaxContent = ({ imgUrl, subheading, heading, loc }) => {
   return (
     <div
       style={{
@@ -54,9 +59,8 @@ const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
     >
       <div className="relative h-[150vh]">
         <StickyImage imgUrl={imgUrl} />
-        <OverlayCopy heading={heading} subheading={subheading} />
+        <OverlayCopy heading={heading} subheading={subheading} loc={loc}/>
       </div>
-      {children}
     </div>
   );
 };
@@ -95,7 +99,7 @@ const StickyImage = ({ imgUrl }) => {
   );
 };
 
-const OverlayCopy = ({ subheading, heading }) => {
+const OverlayCopy = ({ subheading, heading, loc }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -114,11 +118,16 @@ const OverlayCopy = ({ subheading, heading }) => {
       ref={targetRef}
       className="absolute left-0 top-0 h-screen w-full flex-col grid grid-cols-2 text-white"
     >
-      <div className='flex flex-col justify-center items-center h-full w-full'>
+      <div className='flex flex-col justify-center items-center h-full w-full gap-4'>
         <p className="text-left text-4xl md:text-7xl pb-16">{heading}</p>
         <p className="text-left text-xl md:text-3xl pl-16">
           {subheading}
         </p>
+        <div className='pt-16'>
+          <Link to={`/${loc}`} className="flex rounded bg-white px-9 py-4 text-xl text-black md:w-fit">
+            Learn more<FiArrowUpRight className="inline" />
+          </Link>
+        </div>
       </div>
     </motion.div>
   );

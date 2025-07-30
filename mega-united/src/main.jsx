@@ -13,7 +13,7 @@ import { MotionConfig } from 'framer-motion';
 
 const router = createBrowserRouter([
   {path:"/", element: <App />},
-  {path:"/About", element: <Company/>},
+  {path:"/History", element: <Company/>},
   {path:"/Projects", element: <Projects />},
   {path:"/Housing", element: <Housing />},
   {path:"/Projects/:title", element: <ProjectDetail/>},

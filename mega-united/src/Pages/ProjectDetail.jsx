@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom';
 import { FiArrowUpRight } from 'react-icons/fi';
-import { project, getProjectByTitle } from '../assets/project.js';
+import { project, getProjectByTitle } from '../../public/project.js';
 
 
 

@@ -36,9 +36,9 @@ const Housing = () => {
                         backgroundAttachment: 'fixed',
                         backgroundRepeat: 'no-repeat',
                     }}
-                    id='Header'>
+                    id='header'>
                     <div className='text-white w-full'>
-                        <h2 className='absolute bottom-0 text-5xl sm:text-6xl md:text-6xl pl-16 pb-16' style={{fontFamily: '"Helvetica Neue", Helvetica, Arial, sanserif'}}>Housing</h2>
+                        <h2 className='absolute bottom-0 text-8xl sm:text-8xl md:text-8xl pl-16 pb-16' style={{fontFamily: '"Helvetica Neue", Helvetica, Arial, sanserif'}}>Housing</h2>
 
                     </div>
 

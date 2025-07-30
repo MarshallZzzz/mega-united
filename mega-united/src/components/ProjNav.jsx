@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { project } from '../assets/project.js';
+import { project } from '../../public/project.js';
 
 const ProjNav = () => {
     const params = useParams();

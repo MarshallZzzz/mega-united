@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <div className={`fixed top-0 left-0 flex w-full z-50 text-sm py-6 px-6 justify-center items-center pt-10 ${isVisible ? "translate-y-0 transition-transform-colors duration-1000" : "-translate-y-full transition-transform-colors duration-1000"} 
-    ${atTop ? "bg-transparent text-white" : "bg-gray-200 text-black"}`}>
+    ${atTop ? "bg-transparent text-white" : "bg-gray-900 text-white"}`}>
 
       <ul className='fixed flex items-center text-sm gap-6 top-5'>
         <Link to={"/"} className='h-full bg-tansparent items-center justify-center text-center font-bold cursor-pointer hover:underline underline-offset-3 decoration-3' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</Link>

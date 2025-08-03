@@ -45,22 +45,20 @@ const App = () => {
 
       <TextParallaxContent
         imgUrl={"/history/establishment.jpg"}
-        subheading="This is a dummy text in place of the
-                        actual description of the project. This will include more details
-                        of the project, the project scope, and what we tried to accomplish."
+        subheading="Engagement in commercial and residential projects"
         heading="Our History"
         loc="History#header"
       ></TextParallaxContent>
       <TextParallaxContent
         imgUrl={"/FleeMarket/Thumbnail.JPG"}
-        subheading="Community is our priority. We take pride in enhancing community infrastructures and public services through the help of government funding. We are committed to upholding the highest standards of quality, safety, and compliances to ensure timely completion."
+        subheading="Community is our priority! We take pride in enhancing community infrastructures and public services to uphold the highest standards of quality, and safety."
         heading="Government Projects"
         loc="Projects#header"
       >
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl={"/Subdivision/front2.jpg"}
-        subheading="We are dedicated to providing high-quality, affordable housing solutions that meet the needs of diverse communities. Our approach emphasizes thoughtful planning, durable construction, and a commitment to creating safe, comfortable living environments. By working closely with local partners and stakeholders, we strive to ensure that every housing project contributes to long-term community growth and well-being."
+        subheading="We are dedicated to providing high-quality and affordable housing solutions to create long-term community growth and well-being."
         heading="Housing"
         loc="Housing#header"
       >
@@ -71,22 +69,23 @@ const App = () => {
 
         <h1 className='text-7xl text-white px-8 py-8'>Contacts and Location</h1>
         <div className='grid grid-cols-2'>
-          <div id='map' style={{
-            height: "500px",
+          <div id='map' style={{ 
+            height: "500px", 
             width: "600px",
             borderRadius: "16px",
             overflow: "hidden",
-            border: "2px solid #fff"
-          }} />
-          <div className='text-white pl-32 pt-32'
-            style={{
-              width: "350px",
-              height: "300px"
-            }}>
+            border: "2px solid #fff" 
+            }} />
+          <div className='text-white pl-32 pt-32' 
+          style={{
+            width: "350px",
+            height: "300px"
+          }}>
             <h1 className='text-3xl pb-4'>Get in Touch!</h1>
             <p>218 Rojas St, Harmon Industrial Park, 96913, Guam</p>
-            <p>Office number: </p>
-            <p>Office number: </p>
+            <p>+1671-649-0397</p>
+            <p>megaunited088@gmail.com</p>
+        
           </div>
 
         </div>

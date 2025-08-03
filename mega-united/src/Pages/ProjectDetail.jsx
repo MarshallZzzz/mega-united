@@ -56,7 +56,7 @@ const ProjectDetail = () => {
       <div className='container w-full px-16 pl-16'>
 
         <div className='pl-16 pt-16'>
-          <p className='text-black text-3xl flex items-center tracking-widest' style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sanserif' }}>{item.description}</p>
+          <p className='text-black flex items-center tracking-widest' style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sanserif', fontSize: '18px' }}>{item.description}</p>
         </div>
         {/* <div className='container w-1/2 h-auto mx-auto pt-24 mb-16' syle={{ maxWidth: '400px', margin: '0 auto' }}>
                 <ImageGallery items={images} /> 

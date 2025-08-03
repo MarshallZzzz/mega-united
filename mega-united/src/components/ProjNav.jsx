@@ -38,7 +38,7 @@ const ProjNav = () => {
                                 <Link to={`/Projects/:${item.title}`} className='group'>
                                 console.log({item.title})
                                     <div className='transition-transform duration-300 bg-cover hover:scale-101'>
-                                        <img src={item.thumbnail} alt={item.title} className='max-w max-h-150 h-auto w-full' />
+                                        <img src={item.thumbnail} alt={item.title} className='max-w max-h-100 h-auto w-full' />
                                         <div className='relative left-0 right-0 bottom-10 flex justify-center'>
 
                                             <h2 className='absolute left-0 items-start pl-8 text-xl text-white dark:text-white'>

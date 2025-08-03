@@ -17,8 +17,32 @@ Features:
 + Navigation throughout pages
 + Timeline progress bar
     - tracks the progress of scroll
++ Map Functionality (leaflet) - pins office location & interactive
+
+Descriptions Needed
+- Company Description
+- Government Description
+- Housing Description
+
+History
+- brief timeline of company's history
+- missions
+- culture
+
+Gov Pictures
+- Ghura repairs - dededo
+
+- Sports facilities - mangilao / barrigada
+- GCA - mangilao
+- fishing platform - agana
+
+- GWA - Uppertumon
+- JFK - tamuning
 
 
+House
+- House Overview
+- Detailed of housing?
 
 Usage:
 API Endpoints (if applicable): A summary or link to documentation for the backend API endpoints, including request methods, parameters, and expected responses.

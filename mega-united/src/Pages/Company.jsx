@@ -76,7 +76,7 @@ const Company = () => {
     }, [barRef, originalTop]);
 
     return (
-        <div className='w-full not-odd:overflow-hidden shadow-md bg-black'>
+        <div className='w-full overflow-hidden shadow-md bg-black'>
 
             <div className='min-h-screen bg-fixed bg-cover bg-center flex 
            w-full overflow-hidden'
@@ -121,28 +121,29 @@ const Company = () => {
                         {milestones.map((m, i) => (
                             <div key={m.year} className="flex flex-col items-center">
                                 <div className="text-4xl text-bl">{m.year}</div>
-                                {/* <div className="text-xs text-gray-600 bg-white rounded px-2 shadow">{m.event}</div> */}
 
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
-            <div className='w-full min-h-screen bg-[#e9dfd1]'>
+            <div className='w-full min-h-screen bg-[#e9dfd1] px-4 py-4'>
                 <div className='grid grid-col'>
 
-                    <div className='w-full h-full flex flex-col-2 justify-items-center'>
+                    <div className='w-full h-full flex flex-col-2 justify-items-center pr-16'>
                         <div>
                             <h1 className='text-bold text-black text-[15rem] w-1/2 pl-8 text-end' id='#1999'> 1999</h1>
-                            <h2> Company was established</h2>
+                            <p className='text-black' >
+                                Mega United Corp., Ltd., a duly registered Guam Corporation was
+                                established on May 19, 1999. It was formed to actively engage in
+                                commercial and residential projects with general engineering, general
+                                building categories and more than ten other specialty
+                                construction fields.
+                            </p>
                         </div>
-                        <img src='/history/dad.jpg' className='rounded px-8 py-8 pr-8 max-w-350' />
+                        <img src='/history/dad.jpg' className='rounded px-8 py-8 pr-8 max-w-250' />
                     </div>
-                    <div className='flex flex-col-4 py-8'>
-                        <SmallProjectCard
-                            title={2020}
-                            imgUrl={"/history/establishment.jpg"}
-                            description="Sample" />
+                    <div className='flex flex-col-3 gap-4 py-4 pr-16'>
                         <SmallProjectCard
                             title={2020}
                             imgUrl={"/history/establishment.jpg"}
@@ -156,18 +157,14 @@ const Company = () => {
                             imgUrl={"/history/establishment.jpg"}
                             description="Sample" />
                     </div>
-                    <div className='w-full h-full flex flex-col-2 justify-end'>
-                        <img src='/history/three.jpg' className='rounded-lg max-w-300' />
+                    <div className='w-full h-full flex flex-col-2'>
+                        <img src='/history/three.jpg' className='rounded-lg max-w-250' />
                         <div className='pr-8 items-end'>
                             <h1 className='text-bold text-black text-[15rem] w-1/2 pl-4' id='#1999'> 2001 </h1>
                             <h2> First major milestone</h2>
                         </div>
                     </div>
-                    <div className='flex flex-col-4 py-8'>
-                        <SmallProjectCard
-                            title={2020}
-                            imgUrl={"/history/establishment.jpg"}
-                            description="Sample" />
+                    <div className='flex flex-col-3 gap-4 py-4 pr-16'>
                         <SmallProjectCard
                             title={2020}
                             imgUrl={"/history/establishment.jpg"}
@@ -185,14 +182,10 @@ const Company = () => {
                         <h1 className='text-bold text-black text-[15rem] w-1/2 pl-8' id='#1999'> 2002 </h1>
                         <div>
                             <h2> Company was established</h2>
-                            <img src='/history/three.jpg' className='rounded px-8 py-8 pr-8 max-w-300' />
+                            <img src='/history/three.jpg' className='rounded px-8 py-8 pr-8 max-w-250' />
                         </div>
                     </div>
-                    <div className='flex flex-col-4 py-8'>
-                        <SmallProjectCard
-                            title={2020}
-                            imgUrl={"/history/establishment.jpg"}
-                            description="Sample" />
+                    <div className='flex flex-col-3 gap-4 py-4 pr-16'>
                         <SmallProjectCard
                             title={2020}
                             imgUrl={"/history/establishment.jpg"}
@@ -230,7 +223,7 @@ const SmallProjectCard = ({ title, imgUrl, description }) => {
                 src={imgUrl}
                 alt={title}
                 className="w-full object-cover"
-                style={{ maxHeight: "250px" }}
+                style={{ maxHeight: "200px" }}
             />
             <div className="w-full p-4">
                 <h2 className="text-2xl font-bold text-center mb-2">{title}</h2>

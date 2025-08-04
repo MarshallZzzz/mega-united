@@ -39,6 +39,9 @@ Gov Pictures
 - GWA - Uppertumon
 - JFK - tamuning
 
+- Mangilao subdivision
+- Simon Sanchez subdivision
+
 
 House
 - House Overview

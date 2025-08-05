@@ -1,11 +1,11 @@
 Mega United Coporation LTD 
 
-- Showcasing the collection of completed government projects and residential housing.
+- Showcasing template of attraction page, history, government projects, and residential housing.
 
 Tech Stack:
 -----------
 React, TailwindCSS, Framermotion, JavaScript, Node, Vite, 
-database - JSON
+database - JSON (interchangeable with mongoDB)
 
 
 Features: 
@@ -47,9 +47,4 @@ House
 - House Overview
 - Detailed of housing?
 
-Usage:
-API Endpoints (if applicable): A summary or link to documentation for the backend API endpoints, including request methods, parameters, and expected responses.
-Deployment: Information on how to deploy the application to a live environment (if applicable).
-Contributing: Guidelines for contributing to the project, including coding standards, pull request process, etc.
-License: The licensing information for the project.
-Contact/Authors: Information on how to reach the project maintainers or a list of contributors.
+Author: Marshall Zhang
